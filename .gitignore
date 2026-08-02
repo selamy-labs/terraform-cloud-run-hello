@@ -1,4 +1,5 @@
 .terraform/
+.terraform-state/
 *.tfplan
 *.tfstate*
 gha-creds-*.json

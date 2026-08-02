@@ -1,7 +1,6 @@
 terraform {
-  backend "gcs" {
-    bucket = "patrick-agents-terraform-state"
-    prefix = "demos/terraform-cloud-run-hello"
+  backend "local" {
+    path = ".terraform-state/terraform.tfstate"
   }
 
   required_providers {
