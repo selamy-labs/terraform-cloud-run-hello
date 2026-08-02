@@ -41,6 +41,7 @@ jobs:
       - run: terraform apply -auto-approve tfplan
 
       - uses: actions/cache/save@v4
+        if: always()
         with:
           path: .terraform-state
           key: tfstate-${{ github.ref_name }}-${{ github.run_id }}
